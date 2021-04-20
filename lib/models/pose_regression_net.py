@@ -56,22 +56,3 @@ class PoseRegressionNet(nn.Module):
         pred[index] = self.soft_argmax_layer(valid_cubes, grids[index])
 
         return pred.view(-1, 15, 3)
-
-
-class Tokenizer(nn.Module):
-    def __init__(self, cfg):
-        super(Tokenizer, self).__init__()
-        self.beta = cfg.NETWORK.BETA
-
-    def forward(self, x, grids):
-        batch_size = x.size(0)
-        channel = x.size(1)
-        x = x.reshape(batch_size, channel, -1, 1)
-        # x = F.softmax(x, dim=2)
-        x = F.softmax(self.beta * x, dim=2)
-        grids = grids.unsqueeze(1)
-        expectation = torch.sum(torch.mul(x, grids), dim=2)
-        deviation = grids - expectation.unsqueeze(2)
-        variance = torch.sum(torch.mul(torch.pow(deviation, 2), x), dim=2)
-        token = torch.cat([expectation, variance], dim=2)
-        return token

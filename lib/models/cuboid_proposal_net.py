@@ -66,23 +66,6 @@ class ProposalLayer(nn.Module):
         else:
             grid_centers[:, :, 3] = (topk_values > self.threshold).float() - 1.0  # if ground-truths are not available.
 
-        # nms
-        # for b in range(batch_size):
-        #     centers = copy.deepcopy(topk_unravel_index[b, :, :3])
-        #     scores = copy.deepcopy(topk_values[b])
-        #     keep = []
-        #     keep_s = []
-        #     while len(centers):
-        #         keep.append(centers[0])
-        #         keep_s.append(scores[0])
-        #         dist = torch.sqrt(torch.sum((centers[0] - centers)**2, dim=-1))
-        #         index = (dist > 500.0) & (scores > 0.1)
-        #         centers = centers[index]
-        #         scores = scores[index]
-        #     grid_centers[b, :len(keep), :3] = torch.stack(keep, dim=0)
-        #     grid_centers[b, :len(keep), 3] = 0.0
-        #     grid_centers[b, :len(keep), 4] = torch.stack(keep_s, dim=0)
-
         return grid_centers
 
 
