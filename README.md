@@ -1,6 +1,13 @@
 # UNeTR-Pose
-3D Multi-person Pose Estimation in Multi-view Environment using 3D U-Net Transformer Networks
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamasino52%2FUNeTR-Pose&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
+3D Multi-person Pose Estimation in Multi-view Environment using 3D U-Net Transformer Networks
+<img src="/sample/validation_00000200_3d.png"><br>
+<img src="/sample/validation_00000200_view_1_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_2_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_3_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_4_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_5_gt.jpg">
 # Reference
 This code based on https://github.com/microsoft/voxelpose-pytorch. I also use UNETR model to predict pose voxel. Detail reference is here.
 
@@ -62,10 +69,3 @@ ${POSE_ROOT}
             |-- 160226_haggling1  
             |-- ...
 ```
-# Test Sample
-<img src="/sample/validation_00000200_3d.png"><br>
-<img src="/sample/validation_00000200_view_1_gt.jpg"><br>
-<img src="/sample/validation_00000200_view_2_gt.jpg"><br>
-<img src="/sample/validation_00000200_view_3_gt.jpg"><br>
-<img src="/sample/validation_00000200_view_4_gt.jpg"><br>
-<img src="/sample/validation_00000200_view_5_gt.jpg">
