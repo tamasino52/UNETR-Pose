@@ -63,4 +63,9 @@ ${POSE_ROOT}
             |-- ...
 ```
 # Test Sample
-<img src="/sample/validation_00000200_3d.png">
+<img src="/sample/validation_00000200_3d.png"><br>
+<img src="/sample/validation_00000200_view_1_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_2_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_3_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_4_gt.jpg"><br>
+<img src="/sample/validation_00000200_view_5_gt.jpg">
