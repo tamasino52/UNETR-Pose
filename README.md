@@ -16,7 +16,7 @@ This is the implementation with:
 <img src="/sample/validation_00000200_view_5_gt.jpg">
 
 # Reference
-This code based on https://github.com/microsoft/voxelpose-pytorch. I also use UNETR model to predict pose voxel. Detail reference is here.
+This code based on https://github.com/microsoft/voxelpose-pytorch.
 
 ## Data preparation
 
