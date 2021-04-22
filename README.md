@@ -2,17 +2,21 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamasino52%2FUNeTR-Pose&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
 3D Multi-person Pose Estimation in Multi-view Environment using 3D U-Net Transformer Networks
+
+This is the implementation with:
+> [**U-Net Transformer: Self and Cross Attention for Medical Image Segmentation**],            
+> Olivier Petit, Nicolas Thome, Clément Rambour, Luc Soler. 2021.
+> *(https://arxiv.org/abs/2103.06104?context=cs.CV)*
+
 <img src="/sample/validation_00000200_3d.png"><br>
 <img src="/sample/validation_00000200_view_1_gt.jpg"><br>
 <img src="/sample/validation_00000200_view_2_gt.jpg"><br>
 <img src="/sample/validation_00000200_view_3_gt.jpg"><br>
 <img src="/sample/validation_00000200_view_4_gt.jpg"><br>
 <img src="/sample/validation_00000200_view_5_gt.jpg">
+
 # Reference
 This code based on https://github.com/microsoft/voxelpose-pytorch. I also use UNETR model to predict pose voxel. Detail reference is here.
-
-Olivier Petit, Nicolas Thome, Clément Rambour, Luc Soler. U-Net Transformer: Self and Cross Attention for Medical Image Segmentation. 2021.
-https://arxiv.org/abs/2103.06104?context=cs.CV
 
 ## Data preparation
 
