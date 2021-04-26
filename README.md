@@ -2,8 +2,9 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamasino52%2FUNeTR-Pose&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
 3D Multi-person Pose Estimation in Multi-view Environment using 3D U-Net Transformer Networks
+I am not the author of below paper, but I made a multi-person multi-view pose estimator by applying the model of this paper. It's still being updated, so please debug it if necessary.
 
-This is the implementation with:
+This model based on :
 > [**U-Net Transformer: Self and Cross Attention for Medical Image Segmentation**],            
 > Olivier Petit, Nicolas Thome, Clément Rambour, Luc Soler. 2021.
 > *(https://arxiv.org/abs/2103.06104?context=cs.CV)*
