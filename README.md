@@ -6,9 +6,9 @@
 I am not the author of below paper, but I made a multi-person multi-view pose estimator by applying the model of this paper. It's still being updated, so please debug it if necessary.
 
 This model based on :
-> [**U-Net Transformer: Self and Cross Attention for Medical Image Segmentation**],            
-> Olivier Petit, Nicolas Thome, Clément Rambour, Luc Soler. 2021.
-> *(https://arxiv.org/abs/2103.06104?context=cs.CV)*
+> [**UNETR: Transformers for 3D Medical Image Segmentation**],            
+> Ali Hatamizadeh, Dong Yang, Holger Roth, Daguang Xu. 2021.
+> *(https://arxiv.org/abs/2103.10504?context=cs.CV)*
 
 <img src="/sample/validation_00000200_3d.png"><br>
 <img src="/sample/validation_00000200_view_1_gt.jpg"><br>
